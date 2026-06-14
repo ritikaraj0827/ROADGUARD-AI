@@ -1,0 +1,40 @@
+/* index.css — Global styles for RoadGuard AI */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* Severity color system — used everywhere */
+.severity-severe   { color: #ef4444; }
+.severity-moderate { color: #f97316; }
+.severity-minor    { color: #22c55e; }
+
+.badge-severe   { background: #ef444420; color: #ef4444; border: 1px solid #ef4444; }
+.badge-moderate { background: #f9731620; color: #f97316; border: 1px solid #f97316; }
+.badge-minor    { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e; }
+
+.badge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Leaflet map fix — must be set or map won't render */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
